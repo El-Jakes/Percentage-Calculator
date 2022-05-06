@@ -1,7 +1,7 @@
-var numField1 = document.getElementById("numField1");
-var numField2 = document.getElementById("numField2");
-var resultField = document.getElementById("resultField");
-var form = document.getElementById("xIsWhatPercentOfY");
+let numField1 = document.getElementById("numField1");
+let numField2 = document.getElementById("numField2");
+let resultField = document.getElementById("resultField");
+let form = document.getElementById("xIsWhatPercentOfY");
 
 
 form.addEventListener("submit", function(event){
@@ -9,11 +9,11 @@ form.addEventListener("submit", function(event){
   if (!numField1.value || !numField2.value){
     alert("please enter values");
   } else{
-    var x = parseFloat(numField1.value);
-    var y = parseFloat(numField2.value);
+    let x = parseFloat(numField1.value);
+    let y = parseFloat(numField2.value);
 
-var result = x / y;
-var percent = result * 100;
+let result = x / y;
+let percent = result * 100;
 resultField.innerText = "Answer: " + percent + "%";
 event.preventDefault();
   }
